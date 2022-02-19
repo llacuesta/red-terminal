@@ -1,0 +1,81 @@
+@font-face {
+    font-family: ProFontWindows;
+    src: url('/ProFontWindows.ttf');
+}
+
+html {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+body {
+    /* background-color: #161616; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/bg.gif');
+    font-family: ProFontWindows;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+a {
+    text-transform: lowercase;
+    color: white;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #bb0000;
+}
+
+.ascii {
+    text-align: justify;
+}
+
+.ascii > .title {
+    color: #ff0000;
+    padding-top: 20px;
+    animation: blinker 1.7s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#tiresult {
+    font-size: 5px;
+    color: white;
+}
+
+.wrapper {
+    padding-top: 20%;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #bb0000;
+}
+
+nav {
+    text-align: center;
+    margin: 0 1em;
+    padding: 1em 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+li:first-child {
+    font-weight: bold;
+    color: #bb0000;
+    line-height: 2em;
+}
